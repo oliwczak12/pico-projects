@@ -1,0 +1,34 @@
+/**
+ * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+#include <stdio.h>
+#include "pico/stdlib.h"
+#include "hardware/adc.h"
+
+long map(long x, long in_min, long in_max, long out_min, long out_max)
+{
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+int main() {
+    stdio_init_all();
+    adc_init();
+    adc_gpio_init(27);
+    adc_gpio_init(26);
+
+
+    while (1) {
+        adc_select_input(1);
+        uint aX = adc_read();
+        adc_select_input(0);
+        uint aY = adc_read();
+        aX = map(aX,0,4050,1,10);
+        aY = map(aY,20,4095,1,10);
+        printf("X:%i\n",aX);
+        printf("Y:%i\n",aY);
+        sleep_ms(50);
+    }
+}

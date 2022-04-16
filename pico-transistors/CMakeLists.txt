@@ -10,7 +10,7 @@ add_executable(blink_led
 blink_led.c
 )
 
-target_link_libraries(blink_led pico_stdlib)
+target_link_libraries(blink_led pico_stdlib hardware_adc)
 
 # enable usb output, disable uart output
 pico_enable_stdio_usb(blink_led 1)
