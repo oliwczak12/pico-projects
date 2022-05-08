@@ -13,8 +13,8 @@ long map(long x, long in_min, long in_max, long out_min, long out_max)
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
-int xA[5]={3,4,5,6,7};
-int yA[4]={8,0,1,2};
+int xA[5]={0,1,2,3,4};
+int yA[4]={5,6,7,8};
 int time = 100;
 int board[5][4];
 int posX,posY;
