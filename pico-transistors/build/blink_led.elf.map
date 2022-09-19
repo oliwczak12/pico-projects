@@ -1354,9 +1354,9 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/blink_led.dir/home/oliwczak/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/blink_led.dir/home/oliwczak/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/blink_led.dir/home/oliwczak/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccKb6M83.o
- .data          0x0000000000000000        0x0 /tmp/ccKb6M83.o
- .bss           0x0000000000000000        0x0 /tmp/ccKb6M83.o
+ .text          0x0000000000000000        0x0 /tmp/cc8p5Wbj.o
+ .data          0x0000000000000000        0x0 /tmp/cc8p5Wbj.o
+ .bss           0x0000000000000000        0x0 /tmp/cc8p5Wbj.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/11.3.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/11.3.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/11.3.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-atexit.o)
@@ -1672,7 +1672,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/11.3.0/../../../../arm-none-eabi/lib/thumb/v6-m/
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccKb6M83.o
+ .boot2         0x0000000010000000      0x100 /tmp/cc8p5Wbj.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -3195,7 +3195,7 @@ LOAD CMakeFiles/blink_led.dir/home/oliwczak/pico/pico-sdk/src/rp2_common/pico_fi
 LOAD CMakeFiles/blink_led.dir/home/oliwczak/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 LOAD CMakeFiles/blink_led.dir/home/oliwczak/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 LOAD CMakeFiles/blink_led.dir/home/oliwczak/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-LOAD /tmp/ccKb6M83.o
+LOAD /tmp/cc8p5Wbj.o
 LOAD /usr/lib/gcc/arm-none-eabi/11.3.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/11.3.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -3312,7 +3312,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000000000007a2       0x2c CMakeFiles/blink_led.dir/home/oliwczak/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .ARM.attributes
-                0x00000000000007ce       0x22 /tmp/ccKb6M83.o
+                0x00000000000007ce       0x22 /tmp/cc8p5Wbj.o
  .ARM.attributes
                 0x00000000000007f0       0x1e /usr/lib/gcc/arm-none-eabi/11.3.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
